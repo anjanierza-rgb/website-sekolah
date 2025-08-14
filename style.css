@@ -1,0 +1,157 @@
+/* Reset sederhana */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #004aad;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: url('smk.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero .btn {
+  background: #ffcc00;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Content Sections */
+.content {
+  padding: 40px 0;
+  background-color: white;
+}
+
+.content.gray {
+  background-color: #eaeaea;
+}
+
+.content h3 {
+  margin-bottom: 20px;
+}
+
+.content ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 15px 0;
+}
+#backToTop {
+  display: none; /* disembunyikan dulu */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#backToTop:hover {
+  background-color: #003080;
+  transform: scale(1.1);
+}
+/* Mode Terang (default) */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+/* Mode Gelap */
+body.dark-mode {
+  background-color: #121212;
+  color: #ddd;
+}
+body.dark-mode header {
+  background: #222e50;
+}
+body.dark-mode footer {
+  background: #111;
+  color: #aaa;
+}
+body.dark-mode .content {
+  background-color: #1e1e1e;
+}
+body.dark-mode .content.gray {
+  background-color: #2a2a2a;
+}
+body.dark-mode nav ul li a {
+  color: #ddd;
+}
+body.dark-mode nav ul li a:hover {
+  color: #ffcc00;
+}
+body.dark-mode .hero .btn {
+  background: #ffcc00;
+  color: #121212;
+}
+#clock {
+  font-family: monospace;
+  font-size: 1.1rem;
+  color: #ad0082;
+}
+body.dark-mode #clock {
+  color: #ffcc00;
+}
+
+
